@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.body{
+    min-height: 100vh;
+    background: url(bg.jpg) no-repeat;
+    background-size: 100vw 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#scoreBox{
+    position: absolute;
+    top: 10px;
+    right: 200px;
+    font-size: 40px;
+    font-family: 'Cedarville Cursive', cursive;
+}
+#hiscoreBox{
+    position: absolute;
+    top: 50px;
+    right: 200px;
+    font-size: 40px;
+    font-family: 'Cedarville Cursive', cursive;
+
+}
+#board{
+    height: 92vmin;
+    width: 90vmin;
+    border: 5px solid black;
+    background: white;
+    display: grid;
+    grid-template-columns: repeat(18,1fr);
+    grid-template-rows: repeat(18,1fr);
+}
+.head{
+    background-color: rgb(0, 0, 0);
+}
+.food{
+    background-color: rgb(238, 128, 128);
+}
+.snbody{
+    background-color: rgb(0, 255, 85);
+}
